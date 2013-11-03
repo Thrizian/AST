@@ -3,7 +3,7 @@ AST
 
 Althuizen Solar Technology management software.
 
-the plan of this software is to build a database that stores customers/products/packages and orders.
+the plan of this software is to build a CRUD database that stores customers/products/packages/orders and a tax rate.
 
 Below an overview of the planned database tables
 
