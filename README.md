@@ -7,79 +7,79 @@ the plan of this software is to build a database that stores customers/products/
 
 Below an overview of the planned database tables
 
-Tables
-Client					has_many_orders
+# Tables
+Client				has_many_orders
 
 client_id				automatic
-company					Bolean
-company_contact	string
-Title						string
-Prefix					string
-Suffix					string
-surname					string
-street					string
-number					integer
+company				Bolean
+company_contact		string
+Title					string
+Prefix				string
+Suffix				string
+surname				string
+street				string
+number				integer
 addition				string
-roomno					nummeric
-zipcode					alphanummeric
-place						string
-country					string
+roomno				nummeric
+zipcode				alphanummeric
+place				string
+country				string
 birthdate				date
-iban						string
+iban					string
 created_at			automatic
 updated_at			automatic
-email						string
-phone						string
+email				string
+phone				string
 cell_phone			string
-	
-Order	"	has_many :packages
-				belongs_to 	:client
-				has_one :btw"
+
+Order			"	has_many 	:packages
+					belongs_to 	:client
+					has_one 	 	:btw"
 order_id				nummeric
 order_no				string
-package					array
-price						integer
+package				array
+price					integer
 discount				integer
 payment_check		bolean
-confirmation_check				bolean
-notes											text
-approval_installation			bolean
-approval_payment					bolean
-approval_completed				bolean
+confirmation_check		bolean
+notes				text
+approval_installation	bolean
+approval_payment		bolean
+approval_completed	bolean
 approval_payment_up_front	bolean
 	
-Products	"	belongs_to :order
-						has_many :parts"
-product_id					automatic
-name								string
-storage							integer
-price_buy						integer
-price_sell					integer
-prerequisites				array
-availability				bolean
-warranty						integer
+Products			"	belongs_to :order
+					has_many :parts"
+product_id			automatic
+name				string
+storage				integer
+price_buy				integer
+price_sell				integer
+prerequisites			array
+availability			bolean
+warranty				integer
 product_warranty		integer
-colour							black or blue
-length							integer (in mm)
-width								integer (in mm)
-roof								flat or sloped
-wattage							integer (in watts)
+colour				black or blue
+length				integer (in mm)
+width				integer (in mm)
+roof					flat or sloped
+wattage				integer (in watts)
 	
-BTW	belongs_to: product
-sale								integer
-integer							integer
-mechanic						integer
-electrician					integer
+BTW					belongs_to: product
+sale					integer
+integer				integer
+mechanic				integer
+electrician			integer
 	
-package						"	has_many :products
-										has_one :btw
-										belongs_to: order"
-package_id					automatic
-package_name				string
-montage							bolean
-electricien					bolean
-roof								flat/sloped
-products						array
+package			"	has_many	:products
+					has_one		:btw
+					belongs_to: order"
+package_id			automatic
+package_name		string
+montage				bolean
+electricien			bolean
+roof					flat/sloped
+products				array
 
 # below here are some formulas that will be used to calculate panel building and materials needed for orders
 
