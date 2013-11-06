@@ -88,21 +88,21 @@ Tussenruimte= 20
 restruimte= 90	
 p=paneel	
 
-berekeningen per rij	lengte + p-1 x tussenruimte + restruimte x 2	
-montagerail staand	breedte + p-1 x tussenruimte + restruimte x 2	
-montagerail liggend	4	
-eindklemmen	p-1x2	
-tussenklemmen	montagerail(meters)x2.5x1.10	
-dakhaken	is gelijk aan aantal dakhaken.	
-moer M10	is gelijk aan aantal dakhaken.	
-bout M10	eindklemmen+tussenklemmen	
-railmoer	if dak = plat landscape and blue 30mm else if dak is plat landscape and black 25mm else if blue 25mm and black 20mm	
-Imbusbouten M8		
-Stekkers	if  plat landscape paneelx5.5 else if plat portrait paneel x 8	
-Stoeptegels	if plat dak paneel +1	.. Rij(en) van ... Panelen
-plat dak landscape	paneelx1.4+1	.. Rij(en) van ... Panelen
-plat dak steun portrait	if landscape plat dak (lengte + p-1 x tussenruimte + restruimte x 2) elseif plat dak portrait (breedte + p -1 x tussenruimte + restruimte x 2)	.. Rij(en) van ... Panelen
-L profiel		.. Rij(en) van ... Panelen
+berekeningen per rij		
+montagerail staand	lengte + p-1 x tussenruimte + restruimte x 2	
+montagerail liggend	breedte + p-1 x tussenruimte + restruimte x 2	
+eindklemmen		4
+tussenklemmen		p-1x2
+dakhaken		montagerail(meters)x2.5x1.10
+moer M10		is gelijk aan aantal dakhaken.
+bout M10		is gelijk aan aantal dakhaken.	
+railmoer		eindklemmen+tussenklemmen
+Imbusbouten M8		if dak = plat landscape and blue 30mm else if dak is plat landscape and black 25mm else if blue 25mm and black 20mm
+Stekkers	
+Stoeptegels		if  plat landscape paneelx5.5 else if plat portrait paneel x 8	
+plat dak landscape	if plat dak paneel +1	
+plat dak steun portrait	paneelx1.4+1	
+L profiel		if landscape plat dak (lengte + p-1 x tussenruimte + restruimte x 2) elseif plat dak portrait (breedte + p -1 x tussenruimte + restruimte x 2)
 		
 		
 soort paneel		
